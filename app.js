@@ -5,7 +5,7 @@ let email = document.querySelector('#email')
 let password = document.querySelector('#password')
 let cnic = document.querySelector('#cnic')
 let btn = document.querySelector('#btn')
-// let btn = document.querySelector('#btn')
+
 
 let nameregex = /^[a-zA-Z][a-zA-Z]{2,}$/;
 let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -23,14 +23,14 @@ event.preventDefault()
 
 
 
-    // E-mail Condition
+   
 if(emailRegex.test(email.value)===true){
     console.log(email.value);
 }else if(emailRegex.test(email.value)===''){
     console.log('Email not found!');
 }
 
-// Password condition
+
 
 if(passwordregex.test(password.value)===true){
     console.log(password.value);
@@ -42,7 +42,7 @@ console.log('Incorrect Password ! Password must strat with a letter contain any 
 }
 
 
-// Cnic Condition 
+ 
 if(cnicregex.test(cnic.value)===true){
     console.log(cnic.value);
 }
@@ -56,5 +56,3 @@ else if(cnicregex.test(cnic.value)=== ''){
 
 
 })
-
-// iske baad regex wali validatoin lagani h ab wo kal karonga Insha Allah !
